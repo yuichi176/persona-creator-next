@@ -4,7 +4,7 @@ export const personaCreatorApiBaseClient = {
     options: RequestInit | undefined,
     responseTypeValidator: TypeValidator<object, T>,
   ): Promise<ApiResponse<T>> {
-    return request(`api/${pathName}`, responseTypeValidator, options)
+    return request(`api${pathName}`, responseTypeValidator, options)
   },
 
   async post<T>(
@@ -13,7 +13,7 @@ export const personaCreatorApiBaseClient = {
     options: RequestInit | undefined,
     responseTypeValidator: TypeValidator<object, T>,
   ): Promise<ApiResponse<T>> {
-    return request(`api/${pathName}`, responseTypeValidator, {
+    return request(`api${pathName}`, responseTypeValidator, {
       method: 'POST',
       ...(body === null ? {} : { body: JSON.stringify(body) }),
       ...options,
