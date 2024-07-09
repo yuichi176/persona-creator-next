@@ -19,6 +19,6 @@ COPY --from=dependencies /app/node_modules ./node_modules
 COPY --from=build /app/.next ./.next
 #COPY --from=build /app/public ./.public
 
-EXPOSE 3000
+EXPOSE 8080
 
 CMD ["next", "start"]
