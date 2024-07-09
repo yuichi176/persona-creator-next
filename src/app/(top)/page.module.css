@@ -1,0 +1,69 @@
+.title {
+    font: var(--label-large);
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.description {
+    font: var(--body-large);
+    margin-bottom: 30px;
+}
+
+.markdown h1 {
+    color: var(--accent);
+}
+
+.markdown p {
+    margin-bottom: 15px;
+}
+
+.errorMessage {
+    margin-bottom: 20px;
+}
+
+.resultContainer {
+    margin-bottom: 50px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.regenerateButton {
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font: var(--body-large);
+    cursor: pointer;
+}
+
+.topButton {
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font: var(--body-large);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.loadMessageContainer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.loadIndicator {
+    width: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: l5 1s infinite linear alternate;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+@keyframes l5 {
+    0%  {box-shadow: 12px 0 #fff, -12px 0 #ffffff22; background: #fff }
+    33% {box-shadow: 12px 0 #fff, -12px 0 #ffffff22; background: #ffffff22}
+    66% {box-shadow: 12px 0 #ffffff22, -12px 0 #fff; background: #ffffff22}
+    100%{box-shadow: 12px 0 #ffffff22, -12px 0 #fff; background: #fff }
+}

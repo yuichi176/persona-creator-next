@@ -6,8 +6,10 @@ import { Jura } from 'next/font/google'
 import Layout from '@/components/Layout'
 
 const jura = Jura({
+  subsets: ['latin', 'latin-ext'],
+  styles: ['normal'],
   display: 'swap',
-  subsets: ['latin'],
+  variable: '--font-jura',
 })
 
 export const metadata: Metadata = {
@@ -23,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={jura.className}>
+    <html lang="en" className={jura.variable}>
+      <body>
         <Layout>{children}</Layout>
       </body>
     </html>

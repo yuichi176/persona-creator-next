@@ -1,0 +1,103 @@
+.formFieldContainer {
+    margin-bottom: 20px;
+}
+
+.formButtonContainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.formField {
+    position: relative;
+}
+
+.formField + .formField {
+    margin-top: 30px;
+}
+
+.label {
+    margin-bottom: 5px;
+}
+
+.requiredText {
+    color: red;
+    margin-left: 10px;
+    font: var(--body-small);
+}
+
+.textInput{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    font: var(--body-large);
+    background-color: var(--black);
+}
+
+.textInput::placeholder {
+    color: var(--gray);
+}
+
+.textInput:focus {
+    border: 1px solid var(--accent);
+}
+
+.select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    font: var(--body-large);
+    background-color: var(--black);
+}
+
+.select:focus {
+    border: 1px solid var(--accent);
+}
+
+.textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    font: var(--body-large);
+    background-color: var(--black);
+    word-break: break-all;
+}
+
+.textarea::placeholder {
+    color: var(--gray);
+}
+
+.textarea:focus {
+    border: 1px solid var(--accent);
+}
+
+.submitButton {
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font: var(--body-large);
+    cursor: pointer;
+}
+
+.submitButton:disabled {
+    border: 1px solid var(--gray);
+    color: var(--gray);
+    cursor: not-allowed;
+}
+
+.clearButton {
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font: var(--body-large);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.errorMessage {
+    position: absolute;
+    color: red;
+    font: var(--body-large);
+}
