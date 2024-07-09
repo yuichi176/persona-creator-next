@@ -1,7 +1,7 @@
 import { GoogleAuth } from 'google-auth-library'
 import { env } from '@/config/env'
 
-const targetAudience = 'https://persona-creator-web-2lvohfo6eq-an.a.run.app'
+const targetAudience = env.PERSONA_CREATOR_API_BASE_URL
 
 export async function getIdToken() {
   if (env.IGNORE_GOOGLE_AUTH) {
