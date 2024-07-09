@@ -2,7 +2,7 @@ import { z } from 'zod'
 import {
   ApiResponse,
   personaCreatorApiBaseClient,
-} from '@/lib/persona-creator-api-client/personaCreatorApiBaseClient.ts'
+} from '@/lib/persona-creator-api-client/personaCreatorApiBaseClient'
 
 export const generatePersonaStream = async (
   body: GeneratePersonaRequestBody,

@@ -7,7 +7,7 @@ import Layout from '@/components/Layout'
 
 const jura = Jura({
   subsets: ['latin', 'latin-ext'],
-  styles: ['normal'],
+  style: ['normal'],
   display: 'swap',
   variable: '--font-jura',
 })

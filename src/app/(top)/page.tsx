@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef } from 'react'
 import { CreateFormDialog, FormValue } from './_component/CreateFormDialog'
-import { usePersonaStream } from '@/hooks/usePersonaStream.tsx'
+import { usePersonaStream } from '@/hooks/usePersonaStream'
 import Markdown from 'react-markdown'
 import styles from './page.module.css'
 
