@@ -48,4 +48,6 @@ jobs:
           --image ${{ env.IMAGE }} \
           --region ${{ vars.REGION }} \
           --service-account=${{ vars.SERVICE_ACCOUNT }} \
-          --set-secrets=PERSONA_CREATOR_API_BASE_URL=persona-creator-api-base-url:1
+          --set-secrets=PERSONA_CREATOR_API_BASE_URL=persona-creator-api-base-url:1 \
+          --port=3000 \
+          --no-allow-unauthenticated
