@@ -9,6 +9,7 @@ export async function POST(request: NextRequest) {
   const body = await request.json()
 
   const idToken = await getIdToken()
+  console.log('idToken:', idToken)
 
   return await fetch(`${env.PERSONA_CREATOR_API_BASE_URL}/persona/streamGenerateContent`, {
     method: 'POST',
